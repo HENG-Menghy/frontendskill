@@ -5,6 +5,63 @@
 
 /* Your custom CSS rules go below */
 :root {
-    --primary-color: ;
-    --font-color: #f5f5f5;
+    --bg-color: #e3d0b0;
+    --primary-color: #0072c4;
+    --secondary-color: #f5f5f5;
+    --btn-color: #dc0202;
+}
+.grid-item {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+    padding-bottom: 8px;
+}
+.grid-item img {
+    width: 100%;
+    aspect-ratio: 4/3;
+}
+.grid-item > :not(img) {
+    margin-inline: .8rem;
+}
+.grid-item div p {
+    text-align: justify;
+    word-wrap: break-word;
+    line-height: 1.4;
+}
+.grid-item div span {
+    font-size: 1.5rem;
+    color: var(--btn-color);
+}
+button {
+    width: 100px;
+    background: var(--btn-color);
+    padding: 2px;
+    color: var(--secondary-color);
+    border: 2px solid #000;
+    border-radius: 6px;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+button:hover {
+    background: #a70202;
+}
+.menuList {
+    display: none;
+}
+.menuList.active {
+    display: flex;
+    flex-direction: column;
+}
+.checkbox:checked + .bar1 {
+    transition: 100ms;
+    translate: 0 5px;
+    rotate: -45deg;
+}
+.checkbox:checked ~ .bar3 {
+    transition: 100ms;
+    translate: 0 -5px;
+    rotate: 45deg;
+}
+.checkbox:checked ~ .bar2 {
+    opacity: 0;
 }

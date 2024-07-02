@@ -9,9 +9,83 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="bg-black h-lvh grid">
-    <h1 class="text-[var(--font-color)]">Hello Tailwindcss</h1>
-</div>
+<body class="bg-[var(--bg-color)] px-6 py-2 font-montserrat max-h-screen">
+    <header class="w-full bg-[var(--primary-color)] relative">
+        <div class="flex lg:justify-end md:justify-between justify-between">
+            <div class="bg-blue-950 py-5 px-4 text-xl text-[var(--secondary-color)] font-extrabold w-max">
+                <i class="fa-solid fa-home"></i>
+            </div>
+            <div class="max-[768px]:hidden md:flex gap-6 px-4 py-5 no-underline text-2xl text-[var(--secondary-color)] font-extrabold">
+                <a href="#">ភ្នំពេញ</a>
+                <a href="#">កំពង់ធំ</a>
+                <a href="#">សៀមរាប</a>
+                <a href="#">បាត់ដំបង</a>
+                <a href="#">កំពង់ចាម</a>
+            </div>
+            <div class="bar md:hidden space-y-[3px] self-center mr-4 cursor-pointer relative">
+                <input type="checkbox" id="checkbox" class="checkbox absolute w-full h-full opacity-0 z-10 cursor-pointer">
+                <div class="bar1 bg-[var(--secondary-color)] h-[2px] w-4 rounded-lg"></div>
+                <div class="bar2 bg-[var(--secondary-color)] h-[2px] w-4 rounded-lg"></div>
+                <div class="bar3 bg-[var(--secondary-color)] h-[2px] w-4 rounded-lg"></div>
+            </div>
+        </div>
+        <div class="menuList absolute top-full right-0 w-1/3 bg-[var(--bg-color)] no-underline font-extrabold">
+            <a href="#" class="w-full text-center p-3 hover:bg-blue-950 hover:text-[var(--secondary-color)]">ភ្នំពេញ</a>
+            <a href="#" class="w-full text-center p-3 hover:bg-blue-950 hover:text-[var(--secondary-color)]">កំពង់ធំ</a>
+            <a href="#" class="w-full text-center p-3 hover:bg-blue-950 hover:text-[var(--secondary-color)]">សៀមរាប</a>
+            <a href="#" class="w-full text-center p-3 hover:bg-blue-950 hover:text-[var(--secondary-color)]">បាត់ដំបង</a>
+            <a href="#" class="w-full text-center p-3 hover:bg-blue-950 hover:text-[var(--secondary-color)]">កំពង់ចាម</a>
+        </div>
+    </header>
+    <main class="bg-[var(--secondary-color)] w-full pt-6">
+        <div class="grid grid-cols-auto-fit-220 gap-4">
+            <div class="grid-item">
+                <img src="/responsive-home-page/image/Phnom Penh.png" alt="Phom Penh">
+                <div>
+                    <span>ភ្នំពេញ</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore earum atque ullam deleniti excepturi qui tempore! Facere, sunt perferendis! Autem ipsa modi, voluptatem dolores officiis illum obcaecati! Ipsum, illo reprehenderit officiis esse quibusdam animi corrupti aliquam eaque repudiandae, iusto iste, provident quaerat fuga debitis culpa id ipsa voluptas neque hic distinctio. Explicabo optio earum doloribus impedit assumenda, omnis dignissimos eveniet.</p>
+                </div>
+                <button>Read More</button>                
+            </div>
+            <div class="grid-item">
+                <img src="/responsive-home-page/image/Kampong Thom statue.png" alt="Kampong Thom">
+                <div>
+                    <span>កំពង់ធំ</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatibus numquam nobis earum adipisci eius assumenda animi ducimus id impedit minus nisi, maiores laudantium modi ad expedita cum iure est, officia error, alias aut? Rerum consequatur exercitationem deserunt blanditiis adipisci.</p>
+                </div>
+                <button>Read More</button>
+            </div>
+            <div class="grid-item">
+                <img src="/responsive-home-page/image/angkor-wat-facts-header.webp" alt="Seam Reab">
+                <div>
+                    <span>សៀមរាប</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatibus numquam nobis earum adipisci eius assumenda animi ducimus id impedit minus nisi, maiores laudantium modi ad expedita cum iure est, officia error, alias aut? Rerum consequatur exercitationem deserunt blanditiis adipisci.</p>
+                </div>
+                <button>Read More</button>
+            </div>
+            <div class="grid-item">
+                <img src="/responsive-home-page/image/Battambang statue.png" alt="Battambang">
+                <div>
+                    <span>បាត់ដំបង</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore earum atque ullam deleniti excepturi qui tempore! Facere, sunt perferendis! Autem ipsa modi, voluptatem dolores officiis illum obcaecati! Ipsum, illo reprehenderit officiis esse quibusdam animi corrupti aliquam eaque repudiandae, iusto iste, provident quaerat fuga debitis culpa id ipsa voluptas neque hic distinctio. Explicabo optio earum doloribus impedit assumenda, omnis dignissimos eveniet.</p>
+                </div>
+                <button>Read More</button>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript">
+        let mycheckbox = document.querySelector(".checkbox");
+        let menubar = document.querySelector(".bar");
+        let menuList = document.querySelector(".menuList");
+        menubar.addEventListener("click", () => {
+            menuList.classList.toggle("active");
+        })
+        window.onscroll = window.onresize = () => {
+            mycheckbox.checked = false;
+            menuList.classList.remove("active");
+        }
+    </script>
 </body>
 </html>
