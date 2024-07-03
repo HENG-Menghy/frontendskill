@@ -8,14 +8,13 @@
    Here are all my project, it listing below:
    
    ### Glass Website
-       This webpage built using HTML and SASS (CSS preprocessor).
+   This webpage built using HTML and SASS (CSS preprocessor).
        
-       Visit it here: 
+   Visit it here: 
 
    
    ### Responsive home page
-       This webpage built using Tailwind CSS (CSS framework) and some JavaScript code.
-       It is the responsive webpage.
+   This webpage built using Tailwind CSS (CSS framework) and some JavaScript code.
+   It is the responsive webpage.
        
-       Visit it here: 
-   https://gleaming-souffle-fc5711.netlify.app/
+   Visit it here: https://gleaming-souffle-fc5711.netlify.app/
