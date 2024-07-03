@@ -33,4 +33,21 @@
     <input type="submit" value="Go">
   </noscript>
 </form>
+# My Project
+
+## Navigation
+
+Choose a site from the dropdown, then click the "Go" button to navigate to the site in a new tab.
+
+<form action="" target="_blank" id="siteForm">
+  <label for="site-select">Choose a site:</label>
+  <select id="site-select" name="sites" onchange="document.getElementById('siteForm').action=this.value;">
+    <option value="">--Please choose an option--</option>
+    <option value="https://www.example.com">Example</option>
+    <option value="https://www.anotherexample.com">Another Example</option>
+    <!-- Add more options as needed -->
+  </select>
+  <input type="submit" value="Go">
+</form>
+
 
