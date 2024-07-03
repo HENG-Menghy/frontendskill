@@ -2,4 +2,195 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .glass {
+  background: #f5f5f5;
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  border-radius: 1.5rem;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(0.7rem);
+          backdrop-filter: blur(0.7rem);
+  display: flex;
+}
+main .glass .dashboard {
+  flex: 1;
+  height: 80vh;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3));
+  float: left;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+main .glass .dashboard .user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+main .glass .dashboard .user img {
+  width: 4rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+main .glass .dashboard .user h4 {
+  font-size: 0.8rem;
+  color: rgba(71, 101, 149, 0.927);
+}
+main .glass .dashboard .user p {
+  color: rgba(114, 145, 203, 0.927);
+  font-size: 0.7rem;
+}
+main .glass .dashboard .links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: -1.5rem;
+}
+main .glass .dashboard .links .link {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+main .glass .dashboard .links .link img {
+  width: 1.8rem;
+  aspect-ratio: 1;
+}
+main .glass .dashboard .links .link h3 {
+  font-weight: normal;
+  color: rgba(114, 145, 203, 0.927);
+  font-size: 1.1rem;
+}
+main .glass .dashboard .pro {
+  width: 85%;
+  height: 15vh;
+  background: #6cdbeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+  padding-inline: 1rem;
+}
+main .glass .dashboard .pro img {
+  width: 6rem;
+  aspect-ratio: 1;
+  margin-top: -4px;
+}
+main .glass .dashboard .pro h2 {
+  color: #f5f5f5;
+  font-size: 1.1rem;
+}
+main .glass .container {
+  flex: 2;
+  float: left;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-inline: 3rem;
+  flex-direction: column;
+}
+main .glass .container header {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+main .glass .container header h1 {
+  font-weight: 800;
+  color: rgba(71, 101, 149, 0.927);
+  font-size: 2rem;
+}
+main .glass .container header input {
+  width: 55%;
+  margin-top: 5px;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  padding: 0.3rem 0.5rem;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3));
+}
+main .glass .container header input:focus {
+  outline: 1px solid #65dfc9;
+  color: rgba(114, 145, 203, 0.927);
+}
+main .glass .container .card {
+  width: 100%;
+  height: 20%;
+  background: #f5f5f5;
+  display: flex;
+  gap: 3.5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-block: 0.5rem;
+}
+main .glass .container .card img {
+  width: 5rem;
+  aspect-ratio: 1;
+}
+main .glass .container .card .card-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+}
+main .glass .container .card .card-info span {
+  font-weight: normal;
+  color: rgba(114, 145, 203, 0.927);
+  font-size: 1.1rem;
+}
+main .glass .container .card .card-info p {
+  color: rgba(114, 145, 203, 0.927);
+  font-size: 0.7rem;
+}
+main .glass .container .card .card-info .progress-bar {
+  width: 100%;
+  height: 3vh;
+  background: rgb(218, 218, 218);
+  border-radius: 1rem;
+}
+main .glass .container .card .card-info .progress-bar .progress {
+  background: #65dfc9;
+  height: 100%;
+  width: 60%;
+  border-radius: 1rem 0 0 1rem;
+}
+main .glass .container .card .percentage {
+  color: #65dfc9;
+  font-weight: bold;
+  font-size: 1rem;
+  align-self: flex-start;
+}
+
+.circle1, .circle2 {
+  background: #f5f5f5;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2));
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle1 {
+  top: 6%;
+  right: 14%;
+}
+
+.circle2 {
+  bottom: 6%;
+  left: 12%;
 }/*# sourceMappingURL=style.css.map */
