@@ -139,7 +139,7 @@ main .glass .games .card .card-info {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 4px;
+  gap: 6px;
 }
 main .glass .games .card .card-info h3 {
   font-weight: normal;
@@ -179,11 +179,11 @@ main .glass .games .card .percentage {
 }
 
 .circle1 {
-  top: 5%;
-  right: 12%;
+  top: 0;
+  right: 15%;
 }
 
 .circle2 {
-  bottom: 5%;
-  left: 12%;
+  bottom: 0;
+  left: 15%;
 }/*# sourceMappingURL=style.css.map */
