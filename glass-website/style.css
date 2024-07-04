@@ -2,195 +2,188 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 main {
+  font-family: "Poppins", sans-serif;
   min-height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+main p {
+  font-size: 13px;
 }
 main .glass {
-  background: #f5f5f5;
   min-height: 80vh;
   width: 60%;
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
-  border-radius: 1.5rem;
-  z-index: 2;
-  -webkit-backdrop-filter: blur(0.7rem);
-          backdrop-filter: blur(0.7rem);
   display: flex;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  border-radius: 2rem;
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+  z-index: 1;
 }
 main .glass .dashboard {
-  flex: 1;
-  height: 80vh;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3));
-  float: left;
-  border-radius: 1.5rem;
+  width: 27%;
+  min-height: 100%;
+  border-radius: 2rem;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2));
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  gap: 3rem;
+}
+main .glass .dashboard p {
+  font-weight: normal;
+  color: rgba(126, 146, 197, 0.927);
+}
+main .glass .dashboard h4 {
+  font-weight: bold;
+  color: rgba(92, 119, 162, 0.927);
+}
+main .glass .dashboard h3 {
+  font-weight: normal;
+  color: rgba(126, 146, 197, 0.927);
 }
 main .glass .dashboard .user {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 0.3rem;
 }
 main .glass .dashboard .user img {
-  width: 4rem;
+  margin-bottom: 0.5rem;
+  width: 4.5rem;
   aspect-ratio: 1;
   border-radius: 50%;
 }
-main .glass .dashboard .user h4 {
-  font-size: 0.8rem;
-  color: rgba(71, 101, 149, 0.927);
-}
-main .glass .dashboard .user p {
-  color: rgba(114, 145, 203, 0.927);
-  font-size: 0.7rem;
-}
 main .glass .dashboard .links {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-left: -1.5rem;
+  padding-top: 1.5rem;
 }
 main .glass .dashboard .links .link {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  margin-bottom: 2.5rem;
+  gap: 1.7rem;
+  margin-left: -0.8rem;
 }
 main .glass .dashboard .links .link img {
-  width: 1.8rem;
+  width: 2rem;
   aspect-ratio: 1;
-}
-main .glass .dashboard .links .link h3 {
-  font-weight: normal;
-  color: rgba(114, 145, 203, 0.927);
-  font-size: 1.1rem;
 }
 main .glass .dashboard .pro {
   width: 85%;
-  height: 15vh;
-  background: #6cdbeb;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
   border-radius: 1.5rem;
-  padding-inline: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main .glass .dashboard .pro h3 {
+  width: 40%;
+  font-weight: bold;
+  color: #f5f5f5;
 }
 main .glass .dashboard .pro img {
   width: 6rem;
   aspect-ratio: 1;
-  margin-top: -4px;
+  margin-top: -1rem;
 }
-main .glass .dashboard .pro h2 {
-  color: #f5f5f5;
-  font-size: 1.1rem;
-}
-main .glass .container {
-  flex: 2;
-  float: left;
+main .glass .games {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-inline: 3rem;
   flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1;
+  padding: 4rem 3rem;
 }
-main .glass .container header {
-  width: 100%;
-  margin-bottom: 1.5rem;
+main .glass .games .game-search {
+  padding-bottom: 3rem;
 }
-main .glass .container header h1 {
-  font-weight: 800;
-  color: rgba(71, 101, 149, 0.927);
-  font-size: 2rem;
+main .glass .games .game-search h1 {
+  font-weight: bold;
+  color: rgba(92, 119, 162, 0.927);
+  font-size: 1.8rem;
+  letter-spacing: 2px;
 }
-main .glass .container header input {
-  width: 55%;
-  margin-top: 5px;
-  border: none;
+main .glass .games .game-search input {
+  width: 45%;
   outline: none;
+  border: none;
   border-radius: 2rem;
-  padding: 0.3rem 0.5rem;
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3));
+  padding: 3px 1rem;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4));
+  margin-top: 4px;
 }
-main .glass .container header input:focus {
-  outline: 1px solid #65dfc9;
-  color: rgba(114, 145, 203, 0.927);
+main .glass .games .game-search input:focus {
+  outline: 2px solid #65dfc9;
 }
-main .glass .container .card {
-  width: 100%;
-  height: 20%;
-  background: #f5f5f5;
-  display: flex;
-  gap: 3.5rem;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
+main .glass .games .card {
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
   border-radius: 1rem;
-  margin-block: 0.5rem;
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.3);
+  padding: 1.5rem;
+  margin-block: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-main .glass .container .card img {
-  width: 5rem;
+main .glass .games .card img {
+  width: 4.5rem;
   aspect-ratio: 1;
 }
-main .glass .container .card .card-info {
+main .glass .games .card .card-info {
   width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  align-items: flex-start;
   justify-content: center;
+  gap: 4px;
 }
-main .glass .container .card .card-info span {
+main .glass .games .card .card-info h3 {
   font-weight: normal;
-  color: rgba(114, 145, 203, 0.927);
-  font-size: 1.1rem;
+  color: rgba(126, 146, 197, 0.927);
 }
-main .glass .container .card .card-info p {
-  color: rgba(114, 145, 203, 0.927);
-  font-size: 0.7rem;
+main .glass .games .card .card-info p {
+  font-weight: normal;
+  color: rgba(126, 146, 197, 0.927);
 }
-main .glass .container .card .card-info .progress-bar {
-  width: 100%;
-  height: 3vh;
-  background: rgb(218, 218, 218);
-  border-radius: 1rem;
+main .glass .games .card .card-info .progress-bar {
+  width: 90%;
+  height: 1.2rem;
+  background: rgba(209, 209, 209, 0.5);
+  border-radius: 2rem;
 }
-main .glass .container .card .card-info .progress-bar .progress {
-  background: #65dfc9;
-  height: 100%;
+main .glass .games .card .card-info .progress-bar .progress {
   width: 60%;
-  border-radius: 1rem 0 0 1rem;
+  height: 100%;
+  background-color: #6cdbeb;
+  border-radius: 2rem 0 0 2rem;
 }
-main .glass .container .card .percentage {
-  color: #65dfc9;
-  font-weight: bold;
-  font-size: 1rem;
+main .glass .games .card .percentage {
   align-self: flex-start;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-weight: bold;
 }
 
 .circle1, .circle2 {
-  background: #f5f5f5;
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2));
-  height: 15rem;
   width: 15rem;
+  height: 15rem;
   border-radius: 50%;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4));
   position: absolute;
 }
 
 .circle1 {
-  top: 6%;
-  right: 14%;
+  top: 5%;
+  right: 12%;
 }
 
 .circle2 {
-  bottom: 6%;
+  bottom: 5%;
   left: 12%;
 }/*# sourceMappingURL=style.css.map */

@@ -2,206 +2,185 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
 }
 
 // Declare and call variables with `$`
 $primary-color: #65dfc9;
 $secondary-color: #6cdbeb;
 $color-white: #f5f5f5;
+$text-head: rgba(92, 119, 162, 0.927);
+$color-text: rgba(126, 146, 197, 0.927);
 $main-background: linear-gradient(to right top, $primary-color, $secondary-color);
-$circle-background: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.2));
+$circle-background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.4));
 $glass-background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
-$text-bold: rgba(71, 101, 149, 0.927);
-$text-normal: rgba(114, 145, 203, 0.927);
+$dashboard-background: linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(255,255,255, 0.2));
+$input-background: linear-gradient(to right, rgba(255,255,255,0.7), rgba(255,255,255,0.4));
+$card-background: linear-gradient(to right bottom, rgba(255,255,255,0.9), rgba(255,255,255,0.7));
 
 // @mixins for reusing the chunck of code
-@mixin font-desc($color, $size) {
-    color: $color;
-    font-size: $size;
-}
-@mixin font-head($weight, $color, $size) {
+@mixin myfont($weight, $color) {
     font-weight: $weight;
     color: $color;
-    font-size: $size;
 }
 
 main {
+    font-family: "Poppins", sans-serif;
     min-height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
     background: $main-background;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    p {
+        font-size: 13px;
+    }
     .glass {
-        background: $color-white;
         min-height: 80vh;
         width: 60%;
-        background: $glass-background;
-        border-radius: 1.5rem;
-        z-index: 2;
-        backdrop-filter: blur(.7rem);
         display: flex;
+        background: $glass-background;
+        border-radius: 2rem;
+        backdrop-filter: blur(2rem);
+        z-index: 1;
         .dashboard {
-            flex: 1;
-            height: 80vh;
-            background: linear-gradient(180deg, rgba(255,255,255,0.5), rgba(255,255,255,0.3));
-            float: left;
-            border-radius: 1.5rem;
+            width: 27%;
+            min-height: 100%;
+            border-radius: 2rem;
+            background: $dashboard-background;
             display: flex;
             flex-direction: column;
+            justify-content: space-evenly;
             align-items: center;
-            justify-content: center;
-            gap: 3rem;
+            p { @include myfont(normal, $color-text); }
+            h4 { @include myfont(bold, $text-head); }
+            h3 { @include myfont(normal, $color-text); }
             .user {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
-                gap: .3rem;
                 img {
-                    width: 4rem;
+                    margin-bottom: .5rem;
+                    width: 4.5rem;
                     aspect-ratio: 1;
                     border-radius: 50%;
                 }
-                h4 {
-                    font-size: .8rem;
-                    color: $text-bold;
-                }
-                p {
-                    @include font-desc($text-normal, .7rem);
-                }
-
             }
             .links {
-                display: flex;
-                flex-direction: column;
-                gap: 2rem;
-                margin-left: -1.5rem;
+                padding-top: 1.5rem;
                 .link {
                     display: flex;
                     align-items: center;
-                    gap: 2rem;
+                    margin-bottom: 2.5rem;
+                    gap: 1.7rem;
+                    margin-left: -.8rem;
                     img {
-                        width: 1.8rem;
+                        width: 2rem;
                         aspect-ratio: 1;
-                    }
-                    h3 {
-                        @include font-head(normal, $text-normal, 1.1rem);
                     }
                 }
             }
             .pro {
                 width: 85%;
-                height: 15vh;
-                background: $secondary-color;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                background: $main-background;
                 border-radius: 1.5rem;
-                padding-inline: 1rem;
+                padding: .5rem;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                h3 {
+                    width: 40%;
+                    @include myfont(bold, $color-white);
+                }
                 img {
                     width: 6rem;
                     aspect-ratio: 1;
-                    margin-top: -4px;
-                }
-                h2 {
-                    color: $color-white;
-                    font-size: 1.1rem;
+                    margin-top: -1rem;
                 }
             }
         }
-        .container {
-            flex: 2;
-            float: left;
+        .games {
             display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            padding-inline: 3rem;
             flex-direction: column;
-            header {
-                width: 100%;
-                margin-bottom: 1.5rem;
+            justify-content: space-evenly;
+            flex: 1;
+            padding: 4rem 3rem;
+            .game-search {
+                padding-bottom: 3rem;
                 h1 {
-                    @include font-head(800, $text-bold, 2rem);
+                    @include myfont(bold, $text-head);
+                    font-size: 1.8rem;
+                    letter-spacing: 2px;
                 }
                 input {
-                    width: 55%;
-                    margin-top: 5px;
-                    border: none;
+                    width: 45%;
                     outline: none;
+                    border: none;
                     border-radius: 2rem;
-                    padding: .3rem .5rem;
-                    background: linear-gradient(to right bottom, rgba(255,255,255,0.5),rgba(255,255,255,0.3));
+                    padding: 3px 1rem;
+                    background: $input-background;
+                    margin-top: 4px;
                 }
                 input:focus {
-                    outline: 1px solid $primary-color;
-                    color: $text-normal;
+                    outline: 2px solid #65dfc9;
                 }
             }
             .card {
-                width: 100%;
-                height: 20%;
-                background: $color-white;
-                display: flex;
-                gap: 3.5rem;
-                align-items: center;
-                justify-content: space-between;
-                padding: 1rem;
+                background: $card-background;
                 border-radius: 1rem;
-                margin-block: .5rem;
+                box-shadow: 5px 5px 5px rgba(255,255,255,0.3);
+                padding: 1.5rem;
+                margin-block: 1rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
                 img {
-                    width: 5rem;
+                    width: 4.5rem;
                     aspect-ratio: 1;
                 }
                 .card-info {
                     width: 50%;
                     display: flex;
                     flex-direction: column;
-                    gap: .5rem;
+                    align-items: flex-start;
                     justify-content: center;
-                    span {
-                        @include font-head(normal, $text-normal, 1.1rem)
-                    }
-                    p {
-                        @include font-desc($text-normal, .7rem)
-                    }
+                    gap: 4px;
+                    h3 { @include myfont(normal, $color-text);}
+                    p { @include myfont(normal, $color-text)}
                     .progress-bar {
-                        width: 100%;
-                        height: 3vh;
-                        background: rgb(218, 218, 218);
-                        border-radius: 1rem;
+                        width: 90%;
+                        height: 1.2rem;
+                        background: rgb(209, 209, 209, 0.5);
+                        border-radius: 2rem;
                         .progress {
-                            background: $primary-color;
-                            height: 100%;
                             width: 60%;
-                            border-radius: 1rem 0 0 1rem;
+                            height: 100%;
+                            background-color: $secondary-color;
+                            border-radius: 2rem 0 0 2rem;
                         }
                     }
                 }
                 .percentage {
-                    color: $primary-color;
-                    font-weight: bold;
-                    font-size: 1rem;
                     align-self: flex-start;
+                    background: $main-background;
+                    background-clip: text;
+                    color: transparent;
+                    font-weight: bold;
                 }
             }
         }
     }
 }
 .circle1, .circle2 {
-    background: $color-white;
-    background: $circle-background;
-    height: 15rem;
     width: 15rem;
+    height: 15rem;
     border-radius: 50%;
+    background: $circle-background;
     position: absolute;
 }
 .circle1 {
-    top: 6%;
-    right: 14%;
+    top: 5%;
+    right: 12%;
 }
 .circle2 {
-    bottom: 6%;
+    bottom: 5%;
     left: 12%;
 }
-
