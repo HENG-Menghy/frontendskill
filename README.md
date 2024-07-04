@@ -10,7 +10,7 @@
    ### Glass Website
    This webpage built using HTML and SASS (CSS preprocessor).
        
-   Visit it here: https://6686608d6ae16aad1af7add2--zippy-sorbet-14dbeb.netlify.app/
+   Visit it here: https://zippy-sorbet-14dbeb.netlify.app/
    
    ### Responsive home page
    This webpage built using Tailwind CSS (CSS framework) and a little bit of JavaScript code.
