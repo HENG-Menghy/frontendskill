@@ -34,7 +34,7 @@ main {
         font-size: 13px;
     }
     .glass {
-        min-height: 80vh;
+        min-height: 70vh;
         width: 60%;
         display: flex;
         background: $glass-background;
@@ -42,21 +42,20 @@ main {
         backdrop-filter: blur(2rem);
         z-index: 1;
         .dashboard {
-            width: 27%;
             min-height: 100%;
             border-radius: 2rem;
             background: $dashboard-background;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: space-around;
             align-items: center;
+            flex: 1;
             p, h3 { @include myfont(normal, $color-text); }
             h4 { @include myfont(bold, $text-head); }
             .user {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding-block: 2rem;
                 img {
                     margin-bottom: .5rem;
                     width: 4.5rem;
@@ -65,7 +64,6 @@ main {
                 }
             }
             .links {
-                padding-top: 1rem;
                 .link {
                     display: flex;
                     align-items: center;
@@ -83,7 +81,6 @@ main {
                 background: $main-background;
                 border-radius: 1.5rem;
                 padding: .5rem;
-                margin-block: 2rem;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
@@ -102,8 +99,8 @@ main {
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            flex: 1;
-            padding: 3rem;
+            flex: 2;
+            padding: 2rem;
             .game-search {
                 padding-bottom: 3rem;
                 h1 {
@@ -132,6 +129,7 @@ main {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                margin-block: .5rem;
                 img {
                     width: 4.5rem;
                     aspect-ratio: 1;
