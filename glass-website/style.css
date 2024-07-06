@@ -35,7 +35,7 @@ main .glass .dashboard {
   justify-content: space-evenly;
   align-items: center;
 }
-main .glass .dashboard p {
+main .glass .dashboard p, main .glass .dashboard h3 {
   font-weight: normal;
   color: rgba(126, 146, 197, 0.927);
 }
@@ -43,14 +43,11 @@ main .glass .dashboard h4 {
   font-weight: bold;
   color: rgba(92, 119, 162, 0.927);
 }
-main .glass .dashboard h3 {
-  font-weight: normal;
-  color: rgba(126, 146, 197, 0.927);
-}
 main .glass .dashboard .user {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-block: 2rem;
 }
 main .glass .dashboard .user img {
   margin-bottom: 0.5rem;
@@ -59,7 +56,7 @@ main .glass .dashboard .user img {
   border-radius: 50%;
 }
 main .glass .dashboard .links {
-  padding-top: 1.5rem;
+  padding-top: 1rem;
 }
 main .glass .dashboard .links .link {
   display: flex;
@@ -77,6 +74,7 @@ main .glass .dashboard .pro {
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
   border-radius: 1.5rem;
   padding: 0.5rem;
+  margin-block: 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -96,7 +94,7 @@ main .glass .games {
   flex-direction: column;
   justify-content: space-evenly;
   flex: 1;
-  padding: 4rem 3rem;
+  padding: 3rem;
 }
 main .glass .games .game-search {
   padding-bottom: 3rem;
@@ -124,7 +122,6 @@ main .glass .games .card {
   border-radius: 1rem;
   box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.3);
   padding: 1.5rem;
-  margin-block: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;

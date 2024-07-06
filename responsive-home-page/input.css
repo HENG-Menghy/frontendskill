@@ -53,14 +53,10 @@ button:hover {
     flex-direction: column;
 }
 .checkbox:checked + .bar1 {
-    transition: 100ms;
-    translate: 0 5px;
-    rotate: -45deg;
+    transform: rotate(-45deg) translate(0, 5px);
 }
 .checkbox:checked ~ .bar3 {
-    transition: 100ms;
-    translate: 0 -5px;
-    rotate: 45deg;
+    transform: rotate(45deg) translate(-2px, -7px);
 }
 .checkbox:checked ~ .bar2 {
     opacity: 0;
