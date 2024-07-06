@@ -18,7 +18,7 @@
    - This project get up and run with the Tailwind CLI tool
      - Installation Tailwind CLI: https://tailwindcss.com/docs/installation
        
-     Visit it here: https://beautiful-heliotrope-4d82a2.netlify.app/
+   Visit it here: https://beautiful-heliotrope-4d82a2.netlify.app/
 
    ### Animated login and sign up page
    This webpage built by using HTML CSS and JavaScript. Especially, it has added with CSS animation.
