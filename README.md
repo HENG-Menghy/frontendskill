@@ -10,11 +10,11 @@
    ### Glass Website
    This webpage built using HTML and SASS (CSS preprocessor).
        
-   Visit it here: https://zippy-sorbet-14dbeb.netlify.app/
+   Visit it here: https://enchanting-gingersnap-5c11b1.netlify.app/
    
    ### Responsive home page
    This webpage built using Tailwind CSS (CSS framework) and a little bit of JavaScript code.
    It is the responsive webpage.
        
-   Visit it here: https://gleaming-souffle-fc5711.netlify.app/
+   Visit it here: https://beautiful-heliotrope-4d82a2.netlify.app/
   
