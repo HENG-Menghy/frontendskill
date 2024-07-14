@@ -5,7 +5,7 @@
    This is my github repository, it focuses on building and practicing the project that related in field of front-end.
 
 # Visit all my project
-   Here are all my projects, it list below:
+   Here are all my projects, it lists below:
    
    ### Glass Website
    This webpage built by using HTML and SASS (CSS preprocessor).
