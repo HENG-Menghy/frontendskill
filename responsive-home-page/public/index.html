@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design home page using tailwindcss</title>
-    <link rel="stylesheet" href="./input.css">
     <link rel="stylesheet" href="./output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,15 +13,15 @@
 <body class="bg-[var(--bg-color)] px-6 py-2 font-montserrat max-h-screen">
     <header class="w-full bg-[var(--primary-color)] relative">
         <div class="flex lg:justify-end md:justify-between justify-between">
-            <div class="bg-blue-950 py-5 px-4 text-xl text-[var(--secondary-color)] font-extrabold w-max">
+            <div class="bg-blue-950 hover:bg-transparent cursor-pointer py-5 px-4 text-xl text-[var(--secondary-color)] font-extrabold w-max">
                 <i class="fa-solid fa-home"></i>
             </div>
             <div class="max-[768px]:hidden md:flex gap-6 px-4 py-5 no-underline text-2xl text-[var(--secondary-color)] font-extrabold">
-                <a href="#">ភ្នំពេញ</a>
-                <a href="#">កំពង់ធំ</a>
-                <a href="#">សៀមរាប</a>
-                <a href="#">បាត់ដំបង</a>
-                <a href="#">កំពង់ចាម</a>
+                <a href="#" class="hover:text-slate-300">ភ្នំពេញ</a>
+                <a href="#" class="hover:text-slate-300">កំពង់ធំ</a>
+                <a href="#" class="hover:text-slate-300">សៀមរាប</a>
+                <a href="#" class="hover:text-slate-300">បាត់ដំបង</a>
+                <a href="#" class="hover:text-slate-300">កំពង់ចាម</a>
             </div>
             <div class="bar md:hidden space-y-[3px] self-center mr-4 cursor-pointer absolute right-0">
                 <input type="checkbox" id="checkbox" class="checkbox absolute w-full h-full opacity-0 z-10 cursor-pointer">
@@ -31,12 +30,12 @@
                 <div class="bar3 bg-[var(--secondary-color)] h-[2px] w-4 rounded-lg"></div>
             </div>
         </div>
-        <div class="menuList absolute top-full right-0 w-1/3 bg-[var(--bg-color)] no-underline font-extrabold">
-            <a href="#" class="w-full text-center p-3 hover:bg-blue-950 hover:text-[var(--secondary-color)]">ភ្នំពេញ</a>
-            <a href="#" class="w-full text-center p-3 hover:bg-blue-950 hover:text-[var(--secondary-color)]">កំពង់ធំ</a>
-            <a href="#" class="w-full text-center p-3 hover:bg-blue-950 hover:text-[var(--secondary-color)]">សៀមរាប</a>
-            <a href="#" class="w-full text-center p-3 hover:bg-blue-950 hover:text-[var(--secondary-color)]">បាត់ដំបង</a>
-            <a href="#" class="w-full text-center p-3 hover:bg-blue-950 hover:text-[var(--secondary-color)]">កំពង់ចាម</a>
+        <div class="menuList absolute top-full right-0 w-1/3 bg-slate-200 text-blue-950 no-underline font-extrabold">
+            <a href="#" class="menu-item">ភ្នំពេញ</a>
+            <a href="#" class="menu-item">កំពង់ធំ</a>
+            <a href="#" class="menu-item">សៀមរាប</a>
+            <a href="#" class="menu-item">បាត់ដំបង</a>
+            <a href="#" class="menu-item">កំពង់ចាម</a>
         </div>
     </header>
     <main class="bg-[var(--secondary-color)] w-full pt-6">

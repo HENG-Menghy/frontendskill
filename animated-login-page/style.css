@@ -59,6 +59,12 @@ form {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.social-icons a:hover, .social-icons a:active, .social-icons a:focus {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border-color: var(--secondary-color);
 }
 p {
     letter-spacing: 1px;
@@ -93,7 +99,7 @@ button:hover {
     margin: 1rem;
 }
 .social-icons ~ a:hover {
-    color: rgb(67, 6, 113);
+    color: rgb(63, 1, 104);
 }
 button.hidden {
     border: 1px solid #ccc;
@@ -111,10 +117,10 @@ button.hidden {
     right: 0;
     transform: translateX(50%);
     transition: all .7s ease-in-out;
-    z-index: 4;
+    z-index: 3;
 }
 .toggle {
-    width: 100%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -122,15 +128,7 @@ button.hidden {
     flex-direction: column;
     text-align: center;
     gap: 2rem;
-    padding-inline: 15rem;
-    transform: translateX(-25%);
-}
-.toggle-sign-in {
-    display: none;
-    z-index: 4;
-}
-.toggle-sign-up {
-    z-index: 3;
+    padding-inline: 3rem;
 }
 .sign-in {
     z-index: 2;
@@ -138,11 +136,20 @@ button.hidden {
 .sign-up {
     z-index: 1;
 }
+.container.active .sign-up {
+    z-index: 2;
+}
+.container.active .sign-in {
+    z-index: 1;
+}
+.toggle-sign-in {
+    display: none;
+}
+.toggle-sign-up {
+    z-index: 3;
+}
 .container.active .form-container {
     transform: translateX(100%);
-}
-.container.active .sign-up {
-    z-index: 3;
 }
 .container.active .toggle-container {
     border-radius: 2rem 10rem 5rem 2rem;
@@ -150,17 +157,14 @@ button.hidden {
     animation: move .7s ease-in-out;
 }
 .container.active .toggle {
-    transform: translateX(25%);
+    transform: translateX(100%);
 }
 .container.active .toggle-container > .toggle-sign-in {
     display: flex;
 }
 @keyframes move {
-    0%, 49% {
+    to {
         opacity: 1;
-    }
-    50%, 100% {
-        opacity: 2;
     }
 }
 

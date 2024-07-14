@@ -10,6 +10,11 @@
     --secondary-color: #f5f5f5;
     --btn-color: #dc0202;
 }
+
+.menu-item {
+    @apply w-full text-center p-3 hover:bg-blue-950 hover:text-[var(--secondary-color)];
+}
+
 .grid-item {
     display: grid;
     grid-template-rows: subgrid;
