@@ -1,1 +1,2 @@
-It is edited by feature2 branch!
+It is editted by feature2 branch!
+It is made from feature branch!
