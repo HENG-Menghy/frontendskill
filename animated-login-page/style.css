@@ -6,9 +6,9 @@
     font-family: "Montserrat", sans-serif;
 }
 :root {
+    --body-background: #c9d6ff;
     --primary-color: #f5f5f5;
     --secondary-color: #512da8;
-    --body-background: #c9d6ff;
     --body-gradient: linear-gradient(to right, #e2e2e2, var(--body-background)) ;
     --toggle-gradient: linear-gradient(to right bottom, #8195f0, var(--secondary-color));
 }
