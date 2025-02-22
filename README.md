@@ -12,7 +12,7 @@
    Visit it here: https://enchanting-gingersnap-5c11b1.netlify.app/
 
    ### Animated login and sign up page
-   This webpage is built by using HTML CSS and JavaScript. Especially, it has added with CSS animation.<br>
+   This webpage is built by using HTML, CSS, and JavaScript. Especially, it has added with CSS animation.<br>
    Visit it here: https://monumental-starship-e2f77a.netlify.app/
 
    ### Responsive home page
