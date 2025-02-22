@@ -19,8 +19,6 @@
    - This webpage is built by using Tailwind CSS (CSS framework) and a little bit of JavaScript code
    - It is the responsive webpage
    - This project get up and run with the Tailwind CLI tool
-     - Installation Tailwind CLI: https://tailwindcss.com/docs/installation
-   
-   
-   Visit it here: https://hilarious-biscuit-6920ea.netlify.app/
+     Installation Tailwind CLI: https://tailwindcss.com/docs/installation
+   - Visit it here: https://hilarious-biscuit-6920ea.netlify.app/
   
