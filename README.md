@@ -4,7 +4,7 @@
    Hello, I am so excited to get you here. My name is HENG Menghy, I am a front-end developer.
    This is my github repository, it focuses on building and practicing the project that related to the front-end development field.
 
-# Visit all my project
+# Visit all my projects
    Here are all of my projects, it lists as below:
    
    ### Glass Website
