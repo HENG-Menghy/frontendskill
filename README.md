@@ -20,5 +20,5 @@
    - It is the responsive webpage
    - This project get up and run with the Tailwind CLI tool
      - Installation Tailwind CLI by follow this link: https://tailwindcss.com/docs/installation
-   - Visit it here: https://hilarious-biscuit-6920ea.netlify.app/
+   - Visit this responsive webpage here: https://hilarious-biscuit-6920ea.netlify.app/
   
