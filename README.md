@@ -2,7 +2,7 @@
 
 # Welcome to my 'frontendskill' repository 
    Hello, I am so excited to get you here. My name is HENG Menghy; I am a front-end developer.
-   This is my GitHub repository, it focuses on building and practicing the project that related to the front-end development field.
+   This is my GitHub repository, it focuses on building and practicing projects in front-end development field.
 
 # Visit all my projects
    Here are all of my projects, it is listed as below:
